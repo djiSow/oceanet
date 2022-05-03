@@ -1,0 +1,58 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<form method="">
+<div class="flex justify-center ">
+
+    <div class="bg-gray-100 w-2/5 flex-col h-full">
+    
+    <h1 class="flex justify-center mt-5 font-medium leading-tight text-2xl  mb-2 ">Ajoutez votre expérience</h1>
+        <div class="flex flex-col mt-7 ml-7 mr-7 ">
+            <h1 class="flex justify-start">type d'Experience</h1>
+            <button class="bg-white hover:border-black border-2  py-2 px-4 rounded-md mt-4" >expérience professionnelle</button>
+            <button class="bg-white hover:border-black border-2  py-2 px-4 rounded-md mt-4"> stage </button>
+            <button class="bg-white hover:border-black border-2  py-2 px-4 rounded-md mt-4"> alterance</button>
+    
+    </br>   
+    <hr>
+    </br>
+        <p>Intitulé du poste...</p>
+        <input class="bg-white w-4,5/5 py-2 px-4  rounded-md hover:border-black border-2" type="text" placeholder="Titre du Poste" >
+        </br>
+        <hr>
+        <p>Entreprise</p>
+        <input class="bg-white w-4,5/5 py-2 px-4 rounded-md hover:border-black border-2" type="text" placeholder="Entreprise" >
+        </br>
+         </br>
+            <hr>
+            </br>
+        </div>
+                
+            <div class="flex justify-evenly">
+                <p> durée en mois</p>
+                <input type="number" id="quantity" name="quantity" min="1" max="12" class="py-2 px-1 rounded-md hover:border-black border-2">
+                <p> durée en année</p>
+                <input type="number" id="quantity" name="quantity" min="1" max="30" class="py-2 px-1 rounded-md hover:border-black border-2">
+            </div>
+            
+            <div class="flex flex-col mt-1 ml-7 mr-7">
+            </br>
+            <hr>    
+                <p>Localisation</p>
+                <input class="bg-white w-4,5/5 h-7 rounded-md hover:border-black border-2" type="text" placeholder="Paris, Ivry ..." >
+                </br>
+                <hr>
+                <p>Description du poste</p>
+                <textarea class="hover:border-black border-2" id="w3review" name="w3review" rows="4" cols="50" placeholder="décrivez le poste en quelques lignes ..."></textarea>
+            </div>
+            </br></br>
+                <div class="flex justify-center">
+                    <button type="button" class="bg-blue-500 hover:bg-blue-700  text-white py-2 px-4 rounded-md">enregistrer experience</button>
+                </div>
+            </br></br>
+    </div>
+</div>
+</form>
+
+{% endblock %}
